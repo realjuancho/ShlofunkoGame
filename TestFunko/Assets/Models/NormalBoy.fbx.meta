@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 68aab8e7c56f6496f9fe6a9b801fa219
+timeCreated: 1474891991
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Body
+    100004: BrazoIK.L
+    100006: BrazoIK.L_end
+    100008: BrazoIK.R
+    100010: BrazoIK.R_end
+    100012: BrazoInf.L
+    100014: BrazoInf.L_end
+    100016: BrazoInf.R
+    100018: BrazoInf.R_end
+    100020: BrazoSup.L
+    100022: BrazoSup.R
+    100024: Cabeza
+    100026: Cabeza_end
+    100028: Codo.L
+    100030: Codo.L_end
+    100032: Codo.R
+    100034: Codo.R_end
+    100036: Estomago
+    100038: Hair
+    100040: Lamp
+    100042: //RootNode
+    100044: Pie.L
+    100046: Pie.L_end
+    100048: Pie.R
+    100050: Pie.R_end
+    100052: PiernaIK.L
+    100054: PiernaIK.L_end
+    100056: PiernaIK.R
+    100058: PiernaIK.R_end
+    100060: PiernaInf.L
+    100062: PiernaInf.R
+    100064: PiernaSup.L
+    100066: PiernaSup.R
+    100068: Rodilla.L
+    100070: Rodilla.L_end
+    100072: Rodilla.R
+    100074: Rodilla.R_end
+    100076: Shirt
+    100078: Sun
+    100080: Torso
+    100082: PANTS
+    100084: Hair.Bevel
+    100086: HairStrand.000
+    100088: HairStrand.001
+    100090: HairStrand.002
+    100092: HairStrand.003
+    100094: HairStrand.004
+    100096: HairStrand.005
+    100098: HairStrand.006
+    100100: HairStrand.007
+    100102: HairStrand.Taper
+    400000: Armature
+    400002: Body
+    400004: BrazoIK.L
+    400006: BrazoIK.L_end
+    400008: BrazoIK.R
+    400010: BrazoIK.R_end
+    400012: BrazoInf.L
+    400014: BrazoInf.L_end
+    400016: BrazoInf.R
+    400018: BrazoInf.R_end
+    400020: BrazoSup.L
+    400022: BrazoSup.R
+    400024: Cabeza
+    400026: Cabeza_end
+    400028: Codo.L
+    400030: Codo.L_end
+    400032: Codo.R
+    400034: Codo.R_end
+    400036: Estomago
+    400038: Hair
+    400040: Lamp
+    400042: //RootNode
+    400044: Pie.L
+    400046: Pie.L_end
+    400048: Pie.R
+    400050: Pie.R_end
+    400052: PiernaIK.L
+    400054: PiernaIK.L_end
+    400056: PiernaIK.R
+    400058: PiernaIK.R_end
+    400060: PiernaInf.L
+    400062: PiernaInf.R
+    400064: PiernaSup.L
+    400066: PiernaSup.R
+    400068: Rodilla.L
+    400070: Rodilla.L_end
+    400072: Rodilla.R
+    400074: Rodilla.R_end
+    400076: Shirt
+    400078: Sun
+    400080: Torso
+    400082: PANTS
+    400084: Hair.Bevel
+    400086: HairStrand.000
+    400088: HairStrand.001
+    400090: HairStrand.002
+    400092: HairStrand.003
+    400094: HairStrand.004
+    400096: HairStrand.005
+    400098: HairStrand.006
+    400100: HairStrand.007
+    400102: HairStrand.Taper
+    2300000: Hair.Bevel
+    2300002: HairStrand.000
+    2300004: HairStrand.001
+    2300006: HairStrand.002
+    2300008: HairStrand.003
+    2300010: HairStrand.004
+    2300012: HairStrand.005
+    2300014: HairStrand.006
+    2300016: HairStrand.007
+    2300018: HairStrand.Taper
+    3300000: Hair.Bevel
+    3300002: HairStrand.000
+    3300004: HairStrand.001
+    3300006: HairStrand.002
+    3300008: HairStrand.003
+    3300010: HairStrand.004
+    3300012: HairStrand.005
+    3300014: HairStrand.006
+    3300016: HairStrand.007
+    3300018: HairStrand.Taper
+    4300000: Shirt
+    4300002: Hair
+    4300004: Body
+    4300006: PANTS
+    4300008: Hair.Bevel
+    4300010: HairStrand.Taper
+    4300012: HairStrand.007
+    4300014: HairStrand.006
+    4300016: HairStrand.005
+    4300018: HairStrand.004
+    4300020: HairStrand.003
+    4300022: HairStrand.002
+    4300024: HairStrand.001
+    4300026: HairStrand.000
+    9500000: //RootNode
+    13700000: Body
+    13700002: Hair
+    13700004: Shirt
+    13700006: PANTS
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: "\nDefault bone length found in this file is different
+      form the one found in the source avatar:\n\t'BrazoSup.R' : position error =
+      4.958993 mm\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: Armature
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PiernaSup.L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PiernaSup.R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PiernaInf.L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PiernaInf.R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pie.L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pie.R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Estomago
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BrazoSup.L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BrazoSup.R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BrazoInf.L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BrazoInf.R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Cabeza
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BrazoInf.L_end
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BrazoInf.R_end
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: NormalBoy(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Armature
+      position: {x: -0.00000003261214, y: 1.0468526, z: 0.099225365}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 46.296535, y: 46.296535, z: 46.296535}
+      transformModified: 1
+    - name: BrazoIK.L
+      position: {x: -0.028600013, y: 0.0045925607, z: -0.0007870912}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BrazoIK.L_end
+      position: {x: -0, y: 0.0072945487, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BrazoIK.R
+      position: {x: 0.028600007, y: 0.00459256, z: -0.0007870936}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BrazoIK.R_end
+      position: {x: -0, y: 0.0072945473, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Codo.L
+      position: {x: -0.019904558, y: -0.010109624, z: 0.00320868}
+      rotation: {x: 0.7071068, y: -0.00000008429372, z: -0.0000000842937, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Codo.L_end
+      position: {x: -0, y: 0.008984312, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Codo.R
+      position: {x: 0.01990456, y: -0.010109622, z: 0.0032086778}
+      rotation: {x: 0.7071068, y: -0.00000008429372, z: -0.0000000842937, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Codo.R_end
+      position: {x: -0, y: 0.008984312, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Estomago
+      position: {x: 7.044186e-10, y: 0.0059192586, z: -0.006174209}
+      rotation: {x: 0.76805437, y: -0.00000007633984, z: -0.000000091559244, w: 0.6403847}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      transformModified: 1
+    - name: BrazoSup.L
+      position: {x: -0.010032148, y: 0.021922803, z: -0.0031821092}
+      rotation: {x: 0.0060915947, y: 0.00078279135, z: 0.7247639, w: 0.68896997}
+      scale: {x: 1, y: 1, z: 0.99999994}
+      transformModified: 1
+    - name: BrazoInf.L
+      position: {x: -0.00000000230968, y: 0.013593263, z: 0.0000000017136335}
+      rotation: {x: 0.0055896994, y: 0.70731795, z: 0.01875108, w: 0.7066248}
+      scale: {x: 1, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: BrazoInf.L_end
+      position: {x: -0, y: 0.011429126, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BrazoSup.R
+      position: {x: 0.010032148, y: 0.021922803, z: -0.003182114}
+      rotation: {x: 0.056752264, y: 0.060316585, z: 0.7225243, w: -0.68636715}
+      scale: {x: 1.0000002, y: 1.0000001, z: 0.99999994}
+      transformModified: 1
+    - name: BrazoInf.R
+      position: {x: -0.0000000022258608, y: 0.013593262, z: 8.5681673e-10}
+      rotation: {x: 0.021179251, y: 0.6718291, z: 0.0047620796, w: 0.7403881}
+      scale: {x: 0.99999994, y: 0.9999997, z: 1.0000001}
+      transformModified: 1
+    - name: BrazoInf.R_end
+      position: {x: -0, y: 0.011429124, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PiernaSup.L
+      position: {x: -0.007551283, y: 0.0011824921, z: 0.000507313}
+      rotation: {x: -0.010334714, y: 0.15300891, z: 0.9812264, w: 0.11694585}
+      scale: {x: 0.9999995, y: 0.9999999, z: 0.9999994}
+      transformModified: 1
+    - name: PiernaInf.L
+      position: {x: -9.220093e-10, y: 0.007205964, z: -3.7252902e-11}
+      rotation: {x: -0.08366598, y: 0.7023446, z: -0.079021096, w: 0.7024727}
+      scale: {x: 1, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: Pie.L
+      position: {x: 1.862645e-10, y: 0.008818685, z: 6.239861e-10}
+      rotation: {x: 0.3889487, y: -0.48931643, z: 0.5216859, w: 0.58063084}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: Pie.L_end
+      position: {x: -0, y: 0.011827734, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PiernaSup.R
+      position: {x: 0.0075512817, y: 0.0011824898, z: 0.00050730986}
+      rotation: {x: 0.010936191, y: 0.14292991, z: 0.9831801, w: -0.11317388}
+      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000011}
+      transformModified: 1
+    - name: PiernaInf.R
+      position: {x: 2.0489097e-10, y: 0.0072059613, z: 2.7008354e-10}
+      rotation: {x: -0.06706927, y: 0.74072534, z: -0.069548495, w: 0.6648238}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.9999999}
+      transformModified: 1
+    - name: Pie.R
+      position: {x: -2.9802322e-10, y: 0.00878737, z: -7.0780515e-10}
+      rotation: {x: -0.5127061, y: 0.5920353, z: -0.40096882, w: -0.47523764}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.9999999}
+      transformModified: 1
+    - name: Pie.R_end
+      position: {x: -0, y: 0.011827732, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Torso
+      position: {x: 1.7763568e-17, y: 0.0128859915, z: 2.2351725e-10}
+      rotation: {x: -0.12417396, y: 0.000000118286735, z: 0.000000014802698, w: 0.99226046}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Cabeza
+      position: {x: -2.6279167e-17, y: 0.012540074, z: -2.9802322e-10}
+      rotation: {x: 0.18995427, y: -6.9760583e-15, z: 1.3497059e-15, w: 0.9817929}
+      scale: {x: 1, y: 1, z: 0.99999994}
+      transformModified: 1
+    - name: Cabeza_end
+      position: {x: -0, y: 0.043782137, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PiernaIK.L
+      position: {x: -0.011200728, y: 0.0052075917, z: -0.020597508}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PiernaIK.L_end
+      position: {x: -0, y: 0.007971125, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PiernaIK.R
+      position: {x: 0.011200728, y: 0.0052075908, z: -0.020597508}
+      rotation: {x: 0.0020273062, y: -0.000000119209034, z: -2.4167368e-10, w: 0.999998}
+      scale: {x: 1, y: 0.99999994, z: 1}
+      transformModified: 1
+    - name: PiernaIK.R_end
+      position: {x: -0, y: 0.007971191, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Rodilla.L
+      position: {x: -0.010113288, y: -0.009165624, z: -0.015102257}
+      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Rodilla.L_end
+      position: {x: -0, y: 0.009455931, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Rodilla.R
+      position: {x: 0.0101132905, y: -0.009165623, z: -0.015102259}
+      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Rodilla.R_end
+      position: {x: -0, y: 0.0094559295, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Body
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    - name: Hair
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    - name: Lamp
+      position: {x: -4.0762453, y: 5.903862, z: -1.005454}
+      rotation: {x: 0.16907571, y: -0.75588036, z: 0.27217132, w: 0.57094747}
+      scale: {x: 100.00001, y: 100, z: 100}
+      transformModified: 1
+    - name: PANTS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    - name: Shirt
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    - name: Sun
+      position: {x: -0, y: 4.7427435, z: 5.5712094}
+      rotation: {x: 0.5166118, y: 0.55234164, z: 0.07385157, w: 0.65005916}
+      scale: {x: 100, y: 99.99999, z: 100.00001}
+      transformModified: 1
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
