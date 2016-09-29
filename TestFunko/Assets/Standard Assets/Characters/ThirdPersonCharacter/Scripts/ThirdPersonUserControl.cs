@@ -48,7 +48,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // read inputs
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
 
-            Debug.Log(h);
+            //Debug.Log(h);
 
             float v = CrossPlatformInputManager.GetAxis("Vertical");
             bool crouch = Input.GetKey(KeyCode.C);

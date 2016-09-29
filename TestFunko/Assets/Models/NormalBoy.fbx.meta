@@ -57,6 +57,8 @@ ModelImporter:
     100098: HairStrand.006
     100100: HairStrand.007
     100102: HairStrand.Taper
+    100104: BezierCurve
+    100106: hAIR
     400000: Armature
     400002: Body
     400004: BrazoIK.L
@@ -109,6 +111,8 @@ ModelImporter:
     400098: HairStrand.006
     400100: HairStrand.007
     400102: HairStrand.Taper
+    400104: BezierCurve
+    400106: hAIR
     2300000: Hair.Bevel
     2300002: HairStrand.000
     2300004: HairStrand.001
@@ -119,6 +123,7 @@ ModelImporter:
     2300014: HairStrand.006
     2300016: HairStrand.007
     2300018: HairStrand.Taper
+    2300020: BezierCurve
     3300000: Hair.Bevel
     3300002: HairStrand.000
     3300004: HairStrand.001
@@ -129,6 +134,7 @@ ModelImporter:
     3300014: HairStrand.006
     3300016: HairStrand.007
     3300018: HairStrand.Taper
+    3300020: BezierCurve
     4300000: Shirt
     4300002: Hair
     4300004: Body
@@ -143,11 +149,14 @@ ModelImporter:
     4300022: HairStrand.002
     4300024: HairStrand.001
     4300026: HairStrand.000
+    4300028: BezierCurve
+    4300030: hAIR
     9500000: //RootNode
     13700000: Body
     13700002: Hair
     13700004: Shirt
     13700006: PANTS
+    13700008: hAIR
   materials:
     importMaterials: 1
     materialName: 0

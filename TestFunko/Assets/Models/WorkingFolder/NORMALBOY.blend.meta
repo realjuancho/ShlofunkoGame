@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: b9c5e3059b3978948a1b786d36076343
+timeCreated: 1475095564
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: BezierCurve
+    100004: Body
+    100006: BrazoInf_L
+    100008: BrazoInf_R
+    100010: BrazoSup_L
+    100012: BrazoSup_R
+    100014: Cabeza
+    100016: Estomago
+    100018: hAIR
+    100020: Hair_Bevel
+    100022: HairStrand_Taper
+    100024: //RootNode
+    100026: PANTS
+    100028: Pie_L
+    100030: Pie_R
+    100032: PiernaInf_L
+    100034: PiernaInf_R
+    100036: PiernaSup_L
+    100038: PiernaSup_R
+    100040: Shirt
+    100042: Torso
+    400000: Armature
+    400002: BezierCurve
+    400004: Body
+    400006: BrazoInf_L
+    400008: BrazoInf_R
+    400010: BrazoSup_L
+    400012: BrazoSup_R
+    400014: Cabeza
+    400016: Estomago
+    400018: hAIR
+    400020: Hair_Bevel
+    400022: HairStrand_Taper
+    400024: //RootNode
+    400026: PANTS
+    400028: Pie_L
+    400030: Pie_R
+    400032: PiernaInf_L
+    400034: PiernaInf_R
+    400036: PiernaSup_L
+    400038: PiernaSup_R
+    400040: Shirt
+    400042: Torso
+    2300000: BezierCurve
+    2300002: Hair_Bevel
+    2300004: HairStrand_Taper
+    3300000: BezierCurve
+    3300002: Hair_Bevel
+    3300004: HairStrand_Taper
+    4300000: Hair_Bevel
+    4300002: HairStrand_Taper
+    4300004: BezierCurve
+    4300006: hAIR
+    4300008: PANTS
+    4300010: Shirt
+    4300012: Body
+    7400000: Default Take
+    9500000: //RootNode
+    13700000: Body
+    13700002: hAIR
+    13700004: PANTS
+    13700006: Shirt
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
