@@ -27,6 +27,7 @@ ModelImporter:
     100038: PiernaSup_R
     100040: Shirt
     100042: Torso
+    100044: Shoes
     400000: Armature
     400002: BezierCurve
     400004: Body
@@ -49,12 +50,15 @@ ModelImporter:
     400038: PiernaSup_R
     400040: Shirt
     400042: Torso
+    400044: Shoes
     2300000: BezierCurve
     2300002: Hair_Bevel
     2300004: HairStrand_Taper
+    2300006: Shoes
     3300000: BezierCurve
     3300002: Hair_Bevel
     3300004: HairStrand_Taper
+    3300006: Shoes
     4300000: Hair_Bevel
     4300002: HairStrand_Taper
     4300004: BezierCurve
@@ -62,6 +66,7 @@ ModelImporter:
     4300008: PANTS
     4300010: Shirt
     4300012: Body
+    4300014: Shoes
     7400000: Default Take
     9500000: //RootNode
     13700000: Body
