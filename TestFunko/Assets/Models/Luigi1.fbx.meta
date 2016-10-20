@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f4839e7f1c6054540814bd0abfa39bab
-timeCreated: 1476235754
+timeCreated: 1476923552
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -93,6 +93,7 @@ ModelImporter:
     4300026: Eyes
     4300028: Shirt
     4300030: Guy
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -103,11 +104,17 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    animationImportErrors: 
+    animationImportErrors: '
+
+      Imported file ''Luigi1'' conversion failed: Required human bone ''Hips'' not
+      found
+
+
+'
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -140,7 +147,107 @@ ModelImporter:
   copyAvatar: 0
   humanDescription:
     human: []
-    skeleton: []
+    skeleton:
+    - name: Luigi1(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Boot
+      position: {x: -0, y: 0, z: -0.000000014901161}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    - name: Cabello
+      position: {x: 0.1907914, y: 2.914998, z: 0.011923327}
+      rotation: {x: -0.48333237, y: 0.27458987, z: 0.05768573, w: 0.8292542}
+      scale: {x: 23.873026, y: 23.87303, z: 23.87303}
+      transformModified: 1
+    - name: Cabello_MeshPart0
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Cabello_MeshPart1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Cabello_MeshPart2
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Cabello_MeshPart3
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Camera
+      position: {x: -7.3405247, y: 5.0931807, z: 6.5076394}
+      rotation: {x: 0.21061137, y: 0.9052401, z: -0.08928165, w: -0.35806715}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    - name: Cuffs
+      position: {x: -0, y: 2.2728174, z: 0}
+      rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+      scale: {x: 5.0456696, y: 5.0456696, z: 5.0456696}
+      transformModified: 1
+    - name: Eyes
+      position: {x: -0, y: 0.00000023841858, z: 0.000000014901161}
+      rotation: {x: -0.00000003774895, y: 0, z: -0, w: 1}
+      scale: {x: -10.536264, y: -10.536264, z: -10.536264}
+      transformModified: 1
+    - name: Guy
+      position: {x: -0, y: 2.2728174, z: 0}
+      rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+      scale: {x: 5.0456696, y: 5.0456696, z: 5.0456696}
+      transformModified: 1
+    - name: HairBevel
+      position: {x: -0.18971576, y: 2.663086, z: -3.0586734}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    - name: HairTaper
+      position: {x: -2.2543206, y: 2.663086, z: -1.307141}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    - name: Lamp
+      position: {x: 2.0984604, y: 3.6592097, z: 1.3546301}
+      rotation: {x: 0.4875805, y: 0.42592207, z: -0.24908157, w: 0.72028744}
+      scale: {x: 100.00001, y: 99.99999, z: 100}
+      transformModified: 1
+    - name: Pants
+      position: {x: -0, y: 2.2728174, z: 0}
+      rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+      scale: {x: 5.0456696, y: 5.0456696, z: 5.0456696}
+      transformModified: 1
+    - name: PELO1
+      position: {x: -0, y: 2.2728174, z: 0}
+      rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+      scale: {x: 5.0456696, y: 5.0456696, z: 5.0456696}
+      transformModified: 1
+    - name: PELO2
+      position: {x: -0, y: 2.2728174, z: 0}
+      rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+      scale: {x: 5.0456696, y: 5.0456696, z: 5.0456696}
+      transformModified: 1
+    - name: PELO3
+      position: {x: -0, y: 2.2728174, z: 0}
+      rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+      scale: {x: 5.0456696, y: 5.0456696, z: 5.0456696}
+      transformModified: 1
+    - name: Protocabello
+      position: {x: 0.0982212, y: 2.9302874, z: 0.07280184}
+      rotation: {x: -0.3775116, y: -0.5979005, z: 0.59790057, w: 0.37751162}
+      scale: {x: 17.214603, y: 17.214603, z: 17.214603}
+      transformModified: 1
+    - name: Shirt
+      position: {x: -0, y: 2.2728174, z: 0}
+      rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+      scale: {x: 5.0456696, y: 5.0456696, z: 5.0456696}
+      transformModified: 1
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -151,7 +258,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 3
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: 6dad592a7047f495ea005187dc2011cd
+timeCreated: 1476923406
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Boot
+    100002: Cabello
+    100004: Cabello_MeshPart0
+    100006: Cabello_MeshPart1
+    100008: Cabello_MeshPart2
+    100010: Cabello_MeshPart3
+    100012: Cuffs
+    100014: Eyes
+    100016: Guy
+    100018: Guy_MeshPart0
+    100020: Guy_MeshPart1
+    100022: Guy_MeshPart2
+    100024: HairBevel
+    100026: HairTaper
+    100028: //RootNode
+    100030: Pants
+    100032: PELO3
+    100034: Protocabello
+    100036: Shirt
+    400000: Boot
+    400002: Cabello
+    400004: Cabello_MeshPart0
+    400006: Cabello_MeshPart1
+    400008: Cabello_MeshPart2
+    400010: Cabello_MeshPart3
+    400012: Cuffs
+    400014: Eyes
+    400016: Guy
+    400018: Guy_MeshPart0
+    400020: Guy_MeshPart1
+    400022: Guy_MeshPart2
+    400024: HairBevel
+    400026: HairTaper
+    400028: //RootNode
+    400030: Pants
+    400032: PELO3
+    400034: Protocabello
+    400036: Shirt
+    2300000: Boot
+    2300002: Cabello_MeshPart0
+    2300004: Cabello_MeshPart1
+    2300006: Cabello_MeshPart2
+    2300008: Cabello_MeshPart3
+    2300010: Cuffs
+    2300012: Eyes
+    2300014: Guy_MeshPart0
+    2300016: Guy_MeshPart1
+    2300018: Guy_MeshPart2
+    2300020: HairBevel
+    2300022: HairTaper
+    2300024: Pants
+    2300026: PELO3
+    2300028: Protocabello
+    2300030: Shirt
+    3300000: Boot
+    3300002: Cabello_MeshPart0
+    3300004: Cabello_MeshPart1
+    3300006: Cabello_MeshPart2
+    3300008: Cabello_MeshPart3
+    3300010: Cuffs
+    3300012: Eyes
+    3300014: Guy_MeshPart0
+    3300016: Guy_MeshPart1
+    3300018: Guy_MeshPart2
+    3300020: HairBevel
+    3300022: HairTaper
+    3300024: Pants
+    3300026: PELO3
+    3300028: Protocabello
+    3300030: Shirt
+    4300000: HairBevel
+    4300002: HairTaper
+    4300004: Protocabello
+    4300006: Cabello_MeshPart0
+    4300008: Cabello_MeshPart1
+    4300010: Cabello_MeshPart2
+    4300012: Cabello_MeshPart3
+    4300014: PELO3
+    4300016: Boot
+    4300018: Pants
+    4300020: Cuffs
+    4300022: Eyes
+    4300024: Shirt
+    4300026: Guy_MeshPart0
+    4300028: Guy_MeshPart1
+    4300030: Guy_MeshPart2
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
