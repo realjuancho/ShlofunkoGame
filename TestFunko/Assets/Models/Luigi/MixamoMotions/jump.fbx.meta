@@ -118,7 +118,7 @@ ModelImporter:
     - serializedVersion: 16
       name: IdleJump
       takeName: mixamo.com
-      firstFrame: 13
+      firstFrame: 46
       lastFrame: 110
       wrapMode: 0
       orientationOffsetY: 0

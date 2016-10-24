@@ -68,6 +68,9 @@ ModelImporter:
     100120: mixamorig:Spine2
     100122: Pants
     100124: Shirt
+    100126: EyePupil
+    100128: EyesPupil
+    100130: Cejas
     400000: Armature
     400002: Boot
     400004: Cabello
@@ -131,6 +134,9 @@ ModelImporter:
     400120: mixamorig:Spine2
     400122: Pants
     400124: Shirt
+    400126: EyePupil
+    400128: EyesPupil
+    400130: Cejas
     4300000: Cabello_MeshPart0
     4300002: Cabello_MeshPart1
     4300004: Cabello_MeshPart2
@@ -141,6 +147,9 @@ ModelImporter:
     4300014: Shirt
     4300016: Eyes
     4300018: Boot
+    4300020: EyePupil
+    4300022: EyesPupil
+    4300024: Cejas
     7400000: Armature|Armature|mixamo.com|Layer0
     9500000: //RootNode
     13700000: Boot
@@ -153,6 +162,9 @@ ModelImporter:
     13700014: Guy
     13700016: Pants
     13700018: Shirt
+    13700020: EyePupil
+    13700022: EyesPupil
+    13700024: Cejas
   materials:
     importMaterials: 1
     materialName: 0
