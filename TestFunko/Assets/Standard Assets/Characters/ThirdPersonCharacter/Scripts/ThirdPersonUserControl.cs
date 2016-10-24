@@ -37,7 +37,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             if (!m_Jump)
             {
-                m_Jump = CrossPlatformInputManager.GetButtonDown("Square");
+				m_Jump = CrossPlatformInputManager.GetButtonDown("Square");
             }
         }
 
@@ -46,11 +46,18 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private void FixedUpdate()
         {
             // read inputs
-			float h = CrossPlatformInputManager.GetAxis("LStick_LeftRight");
+
+			//Dualshock4
+			//float h = CrossPlatformInputManager.GetAxis("LStick_LeftRight");
+			//float v = CrossPlatformInputManager.GetAxis("LStick_UpDown");
+
+			//Keyboard
+			float h = CrossPlatformInputManager.GetAxis("Horizontal");
+			float v = CrossPlatformInputManager.GetAxis("Vertical");
 
             //Debug.Log(h);
 
-			float v = CrossPlatformInputManager.GetAxis("LStick_UpDown");
+
             bool crouch = Input.GetKey(KeyCode.C);
 
             // calculate move direction to pass to character
