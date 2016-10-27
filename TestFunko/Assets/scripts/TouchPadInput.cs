@@ -5,114 +5,133 @@ public class TouchPadInput : MonoBehaviour {
 
 	
 	public GameObject originPoint;
-	public GameObject finalPoint;
+	public GameObject referenceGameObject;
+	public GameObject arrowPoint;
 
 	public Player playerToControl; 
 
 	void Awake()
 	{
-
-
 		if(!playerToControl) 
-			{playerToControl = GameObject.FindObjectOfType<Player>();
-			}
-
+		{
+			playerToControl = GameObject.FindObjectOfType<Player>();
+		}
 	}
-
-
-	void FixedUpdate()
+		
+	void Update()
 	{
 		CheckForMovementTouch();
-
 		ResetButtons();
 	}
 
-
 	bool isMovementFingerOn;
-
-	bool isFirstFrame;
 	int lastTouchCount = 0;
 
 	void CheckForMovementTouch()
 	{
 		#region MovementInput
 
-	    if(Input.touches.Length > 0)
+//	    if(Input.touches.Length > 0)
+//		{
+//
+//			Touch touch = Input.GetTouch(0);
+//			Vector3 fingerPos = touch.position;
+
+		if(Input.GetMouseButton(0))
 		{
-			if(lastTouchCount < Input.touches.Length)
-			{
-				isFirstFrame = true;
-			}
-			else
-			{
-				isFirstFrame = false;
-			}
+			
+			Vector3 touch = Input.mousePosition;
+			Vector3 fingerPos = touch;
 
-		 	Touch touch = Input.GetTouch(0);
+		 	Camera cam = Camera.main;		
+			//Posicionar el vector en el lugar donde el usuario tiene el dedo mas .5 unidades para ver el objeto
 
-		 	Camera cam = Camera.main;
-			Vector3 fingerPos = touch.position;
-            fingerPos.z = cam.nearClipPlane + 0.5f;
+			fingerPos.z = cam.nearClipPlane + 0.5f;
+		
             Vector3 objPos = cam.ScreenToWorldPoint (fingerPos);
+
+			//Verificar si el usuario comenzó a presionar el dedo
+			if(lastTouchCount == 0)
+			{
+				
+				fingerPos.z = cam.nearClipPlane + 0.8f;
+				Vector3 arrowPos = cam.ScreenToWorldPoint(fingerPos);
+			
+					
+				arrowPoint.transform.position = arrowPos;
+				arrowPoint.transform.LookAt(objPos);
+
+				referenceGameObject.transform.position = arrowPos;
+				referenceGameObject.transform.LookAt(objPos);
+
+			}
+
 
 			originPoint.transform.position = objPos;
 
-			if(isFirstFrame) 
-			{
-				fingerPos.z = cam.nearClipPlane + 0.7f;
-				objPos = cam.ScreenToWorldPoint(fingerPos);
-				
-				finalPoint.transform.position = objPos;
-
-				isFirstFrame = false;
-			}
-
-			if(touch.position.x < Screen.width && touch.position.y < Screen.height )
+			//TODO: Touchpad
+			//if(touch.position.x < Screen.width && touch.position.y < Screen.height )
+			if(touch.x < Screen.width && touch.x > 0 &&
+				touch.y < Screen.height && touch.y > 0)
 			{
 				isMovementFingerOn = true;
+				arrowPoint.transform.LookAt(originPoint.transform.position);
 
-				ActivateTouchFrame(true);
-
-				finalPoint.transform.LookAt(originPoint.transform.position);
-//
 			}
-
 			else
 			{
 				isMovementFingerOn = false;
-				ActivateTouchFrame(isMovementFingerOn);
 			}
 		}
 		else
 		{
 			isMovementFingerOn = false;
-			ActivateTouchFrame(isMovementFingerOn);
 			lastTouchCount = 0;
-
 		}
 
-		lastTouchCount = Input.touches.Length;
+		ActivateObjects(isMovementFingerOn);
+
+		//TODO: Touchpad
+		//lastTouchCount = Input.touches.Length;
+
+		//TODO: Mouse
+		lastTouchCount = Input.GetMouseButton(0) ? 1 : 0 ;
 
 		if(originPoint)
 		{
-			if(originPoint.activeInHierarchy && finalPoint.activeInHierarchy)
+			if(originPoint.activeInHierarchy && arrowPoint.activeInHierarchy)
 			{
-				Vector3 offset =  finalPoint.transform.position - originPoint.transform.position;
+				Vector3 offset =  originPoint.transform.position - arrowPoint.transform.position;
+				offset.Normalize();
 
-				float distance = offset.normalized.magnitude;
+				Camera cam = Camera.main;
+
+
+
+
+				float distance = offset.magnitude;
+
+//				Debug.DrawRay(referenceGameObject.transform.position, referenceGameObject.transform.up, Color.green, 3.0f);
+//				Debug.DrawRay(referenceGameObject.transform.position, referenceGameObject.transform.right, Color.red, 3.0f);
+//				Debug.DrawRay(referenceGameObject.transform.position, referenceGameObject.transform.forward, Color.blue, 3.0f);
+//
+//				Debug.DrawRay(arrowPoint.transform.position, arrowPoint.transform.forward, Color.yellow);
+//
+//
+//				Debug.DrawRay(referenceGameObject.transform.position, 
+//					Vector3.Cross(arrowPoint.transform.forward, referenceGameObject.transform.up), 
+//					Color.magenta);
+//				//Debug.Log(offset.magnitude);
+//
+//				Debug.Log("Dot Product yellow and green" + Vector3.Dot(arrowPoint.transform.forward, referenceGameObject.transform.up));
 
 				Vector3 direction = offset / distance;
-
-
 
 				float x = direction.x;
 				float y = direction.y;
 
-
-
-				//MovementAxis_Horizontal = x;
-				//MovementAxis_Vertical = y;
-
+				MovementAxis_Horizontal = x > 0 ? 1 : -1;
+				MovementAxis_Vertical = y > 0 ? 1 : -1;
 
 			}
 			else
@@ -126,22 +145,14 @@ public class TouchPadInput : MonoBehaviour {
 
 	}
 
-	void ActivateTouchFrame(bool Activate)
+	void ActivateObjects(bool Activate)
 	{
 
-		if(Activate && !isFirstFrame)
-		{
-			isFirstFrame = true;
-		} 
-		else
-		{
-			isFirstFrame = false;
-		}
-		
-		if(Activate && !originPoint.activeInHierarchy && !finalPoint.activeInHierarchy)
+		if(Activate && !originPoint.activeInHierarchy && !arrowPoint.activeInHierarchy)
 		{
 			originPoint.SetActive(true);
-			finalPoint.SetActive(true);
+			arrowPoint.SetActive(true);
+
 			//0.3f Magic Number: means the origin will be positioned a little bit below, since don't want to catch an unintended crouch position
 			//originPoint.transform.position = new Vector3(positionInWorldPoints.x, positionInWorldPoints.y -0.3f, 0.0f);
 		}
@@ -151,9 +162,9 @@ public class TouchPadInput : MonoBehaviour {
 			{
 				originPoint.SetActive(false);
 			}
-			if(finalPoint)
+			if(arrowPoint)
 			{
-				finalPoint.SetActive(false);
+				arrowPoint.SetActive(false);
 			}
 		}
 	}

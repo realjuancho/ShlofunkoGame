@@ -37,8 +37,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             if (!m_Jump)
             {
-				m_Jump = CrossPlatformInputManager.GetButtonDown("Square");
-            }
+
+				//Dualshock4
+				//m_Jump = CrossPlatformInputManager.GetButtonDown("Square");
+            
+				//Keyboard
+				m_Jump = Input.GetKeyDown(KeyCode.Space);
+			}
         }
 
 
@@ -52,16 +57,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			//float v = CrossPlatformInputManager.GetAxis("LStick_UpDown");
 
 			//Keyboard
-			//float h = CrossPlatformInputManager.GetAxis("Horizontal");
-			//float v = CrossPlatformInputManager.GetAxis("Vertical");
+//			float h = Input.GetAxis("Horizontal");
+//			float v = Input.GetAxis("Vertical");
 
-
+			//Touchpad or Mouse
 			float h = TouchPadInput.MovementAxis_Horizontal;
 			float v = TouchPadInput.MovementAxis_Vertical;
 
-
-
-            //Debug.Log(h);
 
 
             bool crouch = Input.GetKey(KeyCode.C);
