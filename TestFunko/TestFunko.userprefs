@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\TouchPadInput.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/TouchPadInput.cs">
     <Files>
-      <File FileName="Assets\scripts\TouchPadInput.cs" Line="134" Column="44" />
+      <File FileName="Assets/scripts/TouchPadInput.cs" Line="148" Column="31" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

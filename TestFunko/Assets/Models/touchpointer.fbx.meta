@@ -10,17 +10,22 @@ ModelImporter:
     100004: Lamp
     100006: Origin
     100008: //RootNode
+    100010: Sphere
     400000: Arrow
     400002: Camera
     400004: Lamp
     400006: Origin
     400008: //RootNode
+    400010: Sphere
     2300000: Arrow
     2300002: Origin
+    2300004: Sphere
     3300000: Arrow
     3300002: Origin
+    3300004: Sphere
     4300000: Origin
     4300002: Arrow
+    4300004: Sphere
   materials:
     importMaterials: 1
     materialName: 0

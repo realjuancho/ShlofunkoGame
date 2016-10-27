@@ -8,18 +8,23 @@ ModelImporter:
     100000: //RootNode
     100002: Arrow
     100004: Origin
+    100006: Sphere
     400000: //RootNode
     400002: Arrow
     400004: Origin
+    400006: Sphere
     2300000: //RootNode
     2300002: Arrow
     2300004: Origin
+    2300006: Sphere
     3300000: //RootNode
     3300002: Arrow
     3300004: Origin
+    3300006: Sphere
     4300000: Cylinder
     4300002: Arrow
     4300004: Origin
+    4300006: Sphere
     7400000: Default Take
     9500000: //RootNode
   materials:
