@@ -3,14 +3,11 @@ using System.Collections;
 
 public class TouchPadInput : MonoBehaviour {
 
-	
 	public GameObject originPoint;
 	public GameObject referenceGameObject;
 	public GameObject arrowPoint;
 
-
 	public TouchButtons[] buttons;
-
 
 	public Player playerToControl; 
 
@@ -24,7 +21,8 @@ public class TouchPadInput : MonoBehaviour {
 		
 	void Update()
 	{
-		CheckForButtonPress();
+
+		//CheckForButtonPress();
 
 		CheckForMovementTouch();
 	}
@@ -48,7 +46,7 @@ public class TouchPadInput : MonoBehaviour {
 //			Vector3 touch = Input.mousePosition;
 //			Vector3 fingerPos = touch;
 
-		 	Camera cam = Camera.main;		
+			Camera	cam = Camera.main;		
 			//Posicionar el vector en el lugar donde el usuario tiene el dedo mas .5 unidades para ver el objeto
 
 			fingerPos.z = cam.nearClipPlane + 0.5f;
@@ -77,8 +75,8 @@ public class TouchPadInput : MonoBehaviour {
 			//TODO: Touchpad
 			if(touch.position.x < Screen.width /2 && touch.position.x > 0 &&
 				touch.position.y < Screen.height && touch.position.y > 0)
-			//if(touch.x < Screen.width && touch.x > 0 &&
-			//	touch.y < Screen.height && touch.y > 0)
+//			if(touch.x < Screen.width /2 && touch.x > 0 &&
+//				touch.y < Screen.height && touch.y > 0)
 			{
 				isMovementFingerOn = true;
 				arrowPoint.transform.LookAt(originPoint.transform.position);
@@ -156,14 +154,55 @@ public class TouchPadInput : MonoBehaviour {
 
 	}
 
-	void CheckForButtonPress()
+	public static bool GetButton(string buttonName)
 	{
+		//TODO: Touchpad
+		if (Input.touches.Length > 0) {	
 
-		
-		
+			for(int i = 0; i < Input.touches.Length; i++)
+			{
+				Touch buttonTouch = Input.GetTouch (i);
+
+				//TODO: Mouse
+		//		if(Input.GetMouseButton(0))
+		//		{
+		//			Vector3 buttonTouch = Input.mousePosition;
+
+					Camera cam = Camera.main;
+
+					//TODO: TouchPad
+					Ray rayButton = cam.ScreenPointToRay(buttonTouch.position);
+
+					//TODO:
+					//Ray rayButton = cam.ScreenPointToRay(buttonTouch);
+
+					RaycastHit buttonHit = new RaycastHit();
+					bool buttonHitFound = Physics.Raycast(rayButton, out buttonHit);
 
 
+					Debug.DrawRay(cam.transform.position, rayButton.direction, Color.yellow, 3.0f);
+
+					if (buttonHitFound) {
+					
+						TouchButtons touchedButton = buttonHit.collider.gameObject.GetComponent<TouchButtons> ();
+
+						if (touchedButton) {
+							
+							touchedButton.setTouched (true);
+
+							if(touchedButton.Name == buttonName)
+								return true;
+						}	
+					
+					}
+			}
+		}
+
+		return false;
 	}
+
+
+
 
 	void ActivateObjects(bool Activate)
 	{
@@ -172,8 +211,6 @@ public class TouchPadInput : MonoBehaviour {
 		{
 			originPoint.SetActive(true);
 			arrowPoint.SetActive(true);
-
-
 		}
 		else if(!Activate)
 		{
@@ -186,6 +223,8 @@ public class TouchPadInput : MonoBehaviour {
 				arrowPoint.SetActive(false);
 			}
 		}
+
+
 	}
 
 	public static float MovementAxis_Vertical;

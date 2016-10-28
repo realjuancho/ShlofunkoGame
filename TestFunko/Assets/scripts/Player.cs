@@ -17,7 +17,7 @@ public class Player : MonoBehaviour {
 
 	void Update () {
 
-		if(CrossPlatformInputManager.GetButton("Cross"))
+		if(CrossPlatformInputManager.GetButton("Cross") || TouchPadInput.GetButton("Action"))
 			triggerAction = true;
 		else
 			triggerAction = false;

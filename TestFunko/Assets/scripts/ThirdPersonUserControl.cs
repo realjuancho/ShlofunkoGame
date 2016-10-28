@@ -38,11 +38,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             if (!m_Jump)
             {
 
-				//Dualshock4
-				//m_Jump = CrossPlatformInputManager.GetButtonDown("Square");
-            
-				//Keyboard
-				m_Jump = Input.GetKeyDown(KeyCode.Space);
+
+				m_Jump = CrossPlatformInputManager.GetButtonDown("Square") || Input.GetKeyDown(KeyCode.Space) || TouchPadInput.GetButton("Jump");
 			}
         }
 
@@ -52,15 +49,15 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             // read inputs
 
-			//Dualshock4
+			//TODO: Dualshock4
 			//float h = CrossPlatformInputManager.GetAxis("LStick_LeftRight");
 			//float v = CrossPlatformInputManager.GetAxis("LStick_UpDown");
 
-			//Keyboard
+			//TODO: Keyboard
 //			float h = Input.GetAxis("Horizontal");
 //			float v = Input.GetAxis("Vertical");
 
-			//Touchpad or Mouse
+			//TODO: Touchpad or Mouse
 			float h = TouchPadInput.MovementAxis_Horizontal;
 			float v = TouchPadInput.MovementAxis_Vertical;
 
