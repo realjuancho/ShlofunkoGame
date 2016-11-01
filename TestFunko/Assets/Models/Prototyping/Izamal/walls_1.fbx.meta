@@ -16,6 +16,8 @@ ModelImporter:
     100016: StreetLight
     100018: StreetLightGlass
     100020: Window
+    100022: Corner45
+    100024: Corner90.001
     400000: Corner90
     400002: Wall2x2x0.25
     400004: WallProfile
@@ -27,6 +29,8 @@ ModelImporter:
     400016: StreetLight
     400018: StreetLightGlass
     400020: Window
+    400022: Corner45
+    400024: Corner90.001
     2300000: Corner90
     2300002: Wall2x2x0.25
     2300004: WallProfile
@@ -37,6 +41,8 @@ ModelImporter:
     2300014: StreetLight
     2300016: StreetLightGlass
     2300018: Window
+    2300020: Corner45
+    2300022: Corner90.001
     3300000: Corner90
     3300002: Wall2x2x0.25
     3300004: WallProfile
@@ -47,6 +53,8 @@ ModelImporter:
     3300014: StreetLight
     3300016: StreetLightGlass
     3300018: Window
+    3300020: Corner45
+    3300022: Corner90.001
     4300000: Corner90
     4300002: Wall2x2x0.25
     4300004: WallProfile
@@ -57,6 +65,8 @@ ModelImporter:
     4300014: StreetLightGlass
     4300016: Window
     4300018: Door
+    4300020: Corner45
+    4300022: Corner90.001
   materials:
     importMaterials: 1
     materialName: 0

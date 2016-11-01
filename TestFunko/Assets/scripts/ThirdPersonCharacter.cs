@@ -19,7 +19,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		Rigidbody m_Rigidbody;
 		Animator m_Animator;
 		bool m_IsGrounded;
-		float m_OrigGroundCheckDistance;
+		//float m_OrigGroundCheckDistance;
 		const float k_Half = 0.5f;
 		float m_TurnAmount;
 		float m_ForwardAmount;
@@ -39,7 +39,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			m_CapsuleCenter = m_Capsule.center;
 
 			m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
-			m_OrigGroundCheckDistance = m_GroundCheckDistance;
+			//m_OrigGroundCheckDistance = m_GroundCheckDistance;
 		}
 
 
@@ -171,7 +171,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			Vector3 extraGravityForce = (Physics.gravity * m_GravityMultiplier) - Physics.gravity;
 			m_Rigidbody.AddForce(extraGravityForce);
 
-			m_GroundCheckDistance = m_Rigidbody.velocity.y < 0 ? m_OrigGroundCheckDistance : 0.01f;
+			//m_GroundCheckDistance = m_Rigidbody.velocity.y < 0 ? m_OrigGroundCheckDistance : 0.01f;
 		}
 
 
@@ -184,7 +184,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, m_JumpPower, m_Rigidbody.velocity.z);
 				m_IsGrounded = false;
 				m_Animator.applyRootMotion = false;
-				m_GroundCheckDistance = 0.1f;
+				//m_GroundCheckDistance = 0.1f;
 
 
 			}
