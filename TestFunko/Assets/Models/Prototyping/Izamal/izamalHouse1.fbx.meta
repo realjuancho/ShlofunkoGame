@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 2efdaa21f51aa4f22b03f64bbb3806a4
+timeCreated: 1477971676
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Corner90
+    100004: Corner90.001
+    100006: Door.002
+    100008: House
+    100010: //RootNode
+    100012: Lamp
+    100014: Pole.001
+    100016: Wall1x2x0.000
+    100018: Wall1x2x0.001
+    100020: Wall1x2x0.25
+    100022: Wall2x2x0.000
+    100024: Wall2x2x0.001
+    100026: Window.000
+    100028: Window.006
+    100030: WindowBars
+    100032: WindowBars.001
+    400000: Camera
+    400002: Corner90
+    400004: Corner90.001
+    400006: Door.002
+    400008: House
+    400010: //RootNode
+    400012: Lamp
+    400014: Pole.001
+    400016: Wall1x2x0.000
+    400018: Wall1x2x0.001
+    400020: Wall1x2x0.25
+    400022: Wall2x2x0.000
+    400024: Wall2x2x0.001
+    400026: Window.000
+    400028: Window.006
+    400030: WindowBars
+    400032: WindowBars.001
+    2300000: Corner90
+    2300002: Corner90.001
+    2300004: Door.002
+    2300006: Pole.001
+    2300008: Wall1x2x0.000
+    2300010: Wall1x2x0.001
+    2300012: Wall1x2x0.25
+    2300014: Wall2x2x0.000
+    2300016: Wall2x2x0.001
+    2300018: Window.000
+    2300020: Window.006
+    2300022: WindowBars
+    2300024: WindowBars.001
+    3300000: Corner90
+    3300002: Corner90.001
+    3300004: Door.002
+    3300006: Pole.001
+    3300008: Wall1x2x0.000
+    3300010: Wall1x2x0.001
+    3300012: Wall1x2x0.25
+    3300014: Wall2x2x0.000
+    3300016: Wall2x2x0.001
+    3300018: Window.000
+    3300020: Window.006
+    3300022: WindowBars
+    3300024: WindowBars.001
+    4300000: Window.000
+    4300002: WindowBars.001
+    4300004: Wall1x2x0.001
+    4300006: Wall1x2x0.000
+    4300008: Wall2x2x0.001
+    4300010: Corner90.001
+    4300012: Wall2x2x0.000
+    4300014: Corner90
+    4300016: Door.002
+    4300018: Window.006
+    4300020: WindowBars
+    4300022: Wall1x2x0.25
+    4300024: Pole.001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
