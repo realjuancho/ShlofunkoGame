@@ -54,12 +54,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			//float v = CrossPlatformInputManager.GetAxis("LStick_UpDown");
 
 			//TODO: Keyboard
-//			float h = Input.GetAxis("Horizontal");
-//			float v = Input.GetAxis("Vertical");
+			float h = Input.GetAxis("Horizontal");
+			float v = Input.GetAxis("Vertical");
 
 			//TODO: Touchpad or Mouse
-			float h = TouchPadInput.MovementAxis_Horizontal;
-			float v = TouchPadInput.MovementAxis_Vertical;
+//			float h = TouchPadInput.MovementAxis_Horizontal;
+//			float v = TouchPadInput.MovementAxis_Vertical;
 
 
 
