@@ -15,6 +15,7 @@ ModelImporter:
     100014: WallProfile
     100016: Window
     100018: WindowBars
+    100020: WindowPane
     400000: Corner45
     400002: Corner90
     400004: Door
@@ -25,6 +26,7 @@ ModelImporter:
     400014: WallProfile
     400016: Window
     400018: WindowBars
+    400020: WindowPane
     2300000: Corner45
     2300002: Corner90
     2300004: Door
@@ -34,6 +36,7 @@ ModelImporter:
     2300012: WallProfile
     2300014: Window
     2300016: WindowBars
+    2300018: WindowPane
     3300000: Corner45
     3300002: Corner90
     3300004: Door
@@ -43,6 +46,7 @@ ModelImporter:
     3300012: WallProfile
     3300014: Window
     3300016: WindowBars
+    3300018: WindowPane
     4300000: Wall1x2x0.25
     4300002: Window
     4300004: Corner45
@@ -52,6 +56,7 @@ ModelImporter:
     4300012: Corner90
     4300014: Wall2x2x0.25
     4300016: WindowBars
+    4300018: WindowPane
   materials:
     importMaterials: 1
     materialName: 0

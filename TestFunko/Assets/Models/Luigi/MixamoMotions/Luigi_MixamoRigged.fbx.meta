@@ -71,6 +71,7 @@ ModelImporter:
     100126: EyePupil
     100128: EyesPupil
     100130: Cejas
+    100132: Cube
     400000: Armature
     400002: Boot
     400004: Cabello
@@ -137,6 +138,9 @@ ModelImporter:
     400126: EyePupil
     400128: EyesPupil
     400130: Cejas
+    400132: Cube
+    2300000: Cube
+    3300000: Cube
     4300000: Cabello_MeshPart0
     4300002: Cabello_MeshPart1
     4300004: Cabello_MeshPart2
@@ -150,6 +154,7 @@ ModelImporter:
     4300020: EyePupil
     4300022: EyesPupil
     4300024: Cejas
+    4300026: Cube
     7400000: Armature|Armature|mixamo.com|Layer0
     9500000: //RootNode
     13700000: Boot
@@ -175,7 +180,13 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    animationImportErrors: 
+    animationImportErrors: '
+
+      Imported file ''Luigi_MixamoRigged'' conversion failed: Transform ''mixamorig:Hips''
+      for human bone ''Hips'' not found
+
+
+'
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
