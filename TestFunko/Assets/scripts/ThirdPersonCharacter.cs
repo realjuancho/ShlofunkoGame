@@ -29,6 +29,16 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		CapsuleCollider m_Capsule;
 		bool m_Crouching;
 
+		Quaternion targetRotation;
+
+		CharacterBalance CB_characterBalance;
+		Renderer renderer_CharacterBalance;
+		Bounds bounds_CharacterBalance;
+
+		public Quaternion TargetRotation
+		{
+			get { return targetRotation; } 
+		}
 
 		void Start()
 		{
@@ -40,6 +50,14 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 			m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 			//m_OrigGroundCheckDistance = m_GroundCheckDistance;
+
+			targetRotation = transform.rotation;
+
+
+			//Used to get the character bottom position to check for grounded
+			CB_characterBalance = GetComponentInChildren<CharacterBalance> ();
+				renderer_CharacterBalance = CB_characterBalance.GetComponent<Renderer> ();
+				bounds_CharacterBalance = renderer_CharacterBalance.bounds;
 		}
 
 
@@ -57,11 +75,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			move = Vector3.ProjectOnPlane(move, m_GroundNormal);
 			m_TurnAmount = Mathf.Atan2(move.x, move.z);
 
-
-
 			m_ForwardAmount = move.magnitude;
-
-
 
 			ApplyExtraTurnRotation();
 
@@ -80,6 +94,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 			// send input and other state parameters to the animator
 			UpdateAnimator(move);
+
+			targetRotation = transform.rotation;
 		}
 
 
@@ -195,6 +211,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			// help the character turn faster (this is in addition to root rotation in the animation)
 			float turnSpeed = Mathf.Lerp(m_StationaryTurnSpeed, m_MovingTurnSpeed, m_ForwardAmount);
 			transform.Rotate(0, m_TurnAmount * turnSpeed * Time.deltaTime, 0);
+
+
 		}
 
 
@@ -213,6 +231,16 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		}
 
 
+
+
+
+		/// <summary>
+		/// Check ground status according to child called characterbalance bounds
+		/// </summary>
+
+		public GameObject tempgo;
+		public float templeft;
+
 		void CheckGroundStatus()
 		{
 			RaycastHit hitInfo;
@@ -220,9 +248,28 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			// helper to visualise the ground check ray in the scene view
 			Debug.DrawLine(transform.position + (Vector3.up * 0.1f), transform.position + (Vector3.up * 0.1f) + (Vector3.down * m_GroundCheckDistance));
 #endif
+
+			renderer_CharacterBalance = CB_characterBalance.GetComponent<Renderer> ();
+			bounds_CharacterBalance = renderer_CharacterBalance.bounds;
+
+			float x = bounds_CharacterBalance.extents.x;
+
+			Vector3 pos0 = renderer_CharacterBalance.transform.TransformPoint(Vector3.right * x);
+
+
+			Debug.DrawRay (pos0, Vector3.down * m_GroundCheckDistance, Color.red);
+
+//			tempgo.transform.position =	 transform.TransformPoint (Vector3.right * templeft);
+
 			// 0.1f is a small offset to start the ray from inside the character
 			// it is also good to note that the transform position in the sample assets is at the base of the character
-			if (Physics.Raycast(transform.position + (Vector3.up * 0.1f), Vector3.down, out hitInfo, m_GroundCheckDistance))
+
+			if(Physics.Raycast(bounds_CharacterBalance.center, Vector3.down, out hitInfo, 2.0f))
+//			if (Physics.Raycast(pos0, Vector3.down, out hitInfo, m_GroundCheckDistance)
+//				||	Physics.Raycast(pos1, Vector3.down, out hitInfo, m_GroundCheckDistance)
+//				||	Physics.Raycast(pos2, Vector3.down, out hitInfo, m_GroundCheckDistance)
+//				||	Physics.Raycast(pos3, Vector3.down, out hitInfo, m_GroundCheckDistance)
+//				)
 			{
 				m_GroundNormal = hitInfo.normal;
 				m_IsGrounded = true;

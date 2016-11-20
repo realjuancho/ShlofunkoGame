@@ -50,12 +50,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // read inputs
 
 			//TODO: Dualshock4
-			//float h = CrossPlatformInputManager.GetAxis("LStick_LeftRight");
-			//float v = CrossPlatformInputManager.GetAxis("LStick_UpDown");
+			float h = CrossPlatformInputManager.GetAxis("LStick_LeftRight");
+			float v = CrossPlatformInputManager.GetAxis("LStick_UpDown");
 
 			//TODO: Keyboard
-			float h = Input.GetAxis("Horizontal");
-			float v = Input.GetAxis("Vertical");
+//			float h = Input.GetAxis("Horizontal");
+//			float v = Input.GetAxis("Vertical");
 
 			//TODO: Touchpad or Mouse
 //			float h = TouchPadInput.MovementAxis_Horizontal;
@@ -79,10 +79,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
 
 
-#if !MOBILE_INPUT
+ 
 			// walk speed multiplier
-	        if (CrossPlatformInputManager.GetButton("L1_Button")) m_Move *= 1.5f;
-#endif
+			if (CrossPlatformInputManager.GetButton("L1_Button")) 
+				m_Move *= 1.5f;
+ 
 
             // pass all parameters to the character control script
 
